@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: white;
+  --font-playwrite-nigeria-modern: "Playwrite NG Modern", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+* {
+  /* position: relative; */
+  z-index: 10;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+@layer utilities {
+  .font-gradient {
+    @apply bg-gradient-to-r from-sky-400 to-teal-300 bg-clip-text text-transparent;
+  }
+}
+
+.font-playwrite-nigeria-modern {
+  font-family: var(--font-playwrite-nigeria-modern);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.icons {
+  height: 5px;
+}
+
+.image-container img {
+  @apply w-16 sm:w-18 md:w-20 lg:w-25;
+}
+
+.sosials,
+.sitemap {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding-top: 1rem;
+}
+
+.sosials p {
+  word-break: break-word; /* Memaksa teks panjang untuk turun ke baris berikutnya */
+  min-width: 0; /* Mencegah elemen dari melampaui batas layar */
+}
+
+.sosials:hover,
+.sitemap:hover {
+  color: oklch(74.6% 0.16 232.661);
+  transform: scale(1.1); /* Memperbesar elemen 10% saat di-hover */
+  transition: transform 0.3s ease-in-out; /* Menambahkan efek transisi agar lebih halus */
+}
