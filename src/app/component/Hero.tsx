@@ -5,8 +5,11 @@ import { MdOutlineMail } from "react-icons/md";
 
 export default function Hero() {
   return (
-    <div id="aboutMe" className="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-screen">
-      <div className="flex flex-col space-y-4">
+    <div
+      id="aboutMe"
+      className="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-screen"
+    >
+      <div data-aos="fade-right" className="flex flex-col space-y-4">
         <p className="text-4xl font-bold font-gradient font-playwrite-nigeria-modern">
           About Me
         </p>
@@ -24,7 +27,10 @@ export default function Hero() {
           Dengan keahlian yang saya miliki, saya berusaha semaksimal mungkin
           untuk memberikan hasil terbaik dalam setiap proyek yang saya kerjakan
         </p>
-        <div className="w-full grid grid-cols-2 gap-1 md:gap-3">
+        <div
+          data-aos="fade-right"
+          className="w-full grid grid-cols-2 gap-1 md:gap-3"
+        >
           <div>
             <Link href="https://www.instagram.com/dav22___" target="_blank">
               <FaInstagram size={25} />
@@ -54,8 +60,11 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center pt-0 md:pt-10 mb-20 md:mb-0">
-        <div className="bg-[url(/assets/profil.jpg)] bg-cover rounded-full shadow-[0px_0px_43px_5px_#0091ff] hover:scale-105 transition-transform-shadow duration-300 hover:shadow-cyan-500 h-50 w-50 md:h-80 md:w-80 z-10"></div>
+      <div
+        data-aos="fade-left"
+        className="flex justify-center pt-0 md:pt-10 mb-20 md:mb-0"
+      >
+        <div className="bg-[url(/assets/profil.jpg)] bg-cover rounded-full shadow-[0px_0px_43px_5px_#0091ff] hover:scale-105 transition-transform-shadow duration-300 hover:shadow-cyan-500 h-50 w-50 md:h-80 md:w-80"></div>
       </div>
     </div>
   );

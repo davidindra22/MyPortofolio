@@ -1,10 +1,25 @@
+"use client";
+
 import React from "react";
+import { useEffect } from "react";
 import Hero from "../component/Hero";
 import Skill from "../component/Skill";
 import Project from "./(project)/project";
 import Footer from "../component/footer";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 export default function Home() {
+  useEffect(() => {
+    // Pastikan hanya berjalan di client
+    if (typeof window !== "undefined") {
+      AOS.init({
+        duration: 1000, // contoh konfigurasi
+        once: true,
+      });
+    }
+  }, []);
+
   return (
     <main className="relative min-h-screen bg-black overflow-hidden text-white px-3 md:px-32 pb-5">
       {/* Glow Bintik Blur */}
@@ -22,8 +37,11 @@ export default function Home() {
 
       {/* Konten utama */}
       <div className="flex h-screen relative z-10">
-        <div className="flex flex-col justify-center items-center w-full h-full">
-          <h3 className="text-6xl font-bold italic h-24 w-32 font-gradient font-playwrite-nigeria-modern transform translate-y-11">
+        <div
+          data-aos="zoom-in-down"
+          className="flex flex-col justify-center items-center w-full h-full"
+        >
+          <h3 className="text-6xl font-bold italic h-24 w-32 font-gradient font-playwrite-nigeria-modern transform translate-y-11 z-11">
             My
           </h3>
           <h2 className="text-[2.5rem] md:text-7xl font-medium uppercase font-poppins">

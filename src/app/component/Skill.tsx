@@ -4,11 +4,16 @@ import React from "react";
 export default function Skill() {
   return (
     <div id="Skilltools" className="min-h-screen  space-y-4">
-      <p className="text-4xl font-bold font-gradient font-playwrite-nigeria-modern">
-        Skill and Tools
-      </p>
-      <p>Skill and Tools that i can use</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4 ">
+      <div data-aos="fade-right">
+        <p className="text-4xl font-bold font-gradient font-playwrite-nigeria-modern">
+          Skill and Tools
+        </p>
+        <p>Skill and Tools that i can use</p>
+      </div>
+      <div
+        data-aos="fade-right"
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4 "
+      >
         <div className="flex flex-col">
           <h1 className="text-2xl">Soft Sklill</h1>
           <p>
@@ -21,7 +26,7 @@ export default function Skill() {
             GIT
           </p>
         </div>
-        <div>
+        <div data-aos="fade-left">
           <div className="text-2xl">Tools :</div>
           <div className="image-container grid grid-cols-3 md:grid-cols-4 gap-2 md:gap-4 items-center justify-items-start">
             <div>

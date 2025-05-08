@@ -11,6 +11,7 @@ import { Pagination } from "swiper/modules";
 export default function Project() {
   return (
     <div
+      data-aos="fade-up"
       id="featuredprojects"
       className="flex flex-col items-center min-h-screen space-y-4 pb-10"
     >

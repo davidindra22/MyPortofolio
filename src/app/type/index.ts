@@ -4,7 +4,8 @@ export type Project = {
   description: string;
   image: string;
   link: string;
+  github: string;
   slug: string;
-  teknologies?: string[];
+  technologies?: string[];
   features?: { bold: string; desc: string }[]; // tambahkan tanda ?
 };
