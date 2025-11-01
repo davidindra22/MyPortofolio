@@ -12,7 +12,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         width={500}
         height={500}
       />
-      <h3 className="text-xl font-semibold">{project.title}</h3>
+      <h3 className="text-xl font-semibold line-clamp-1">{project.title}</h3>
       <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-3">
         {project.description}
       </p>

@@ -8,6 +8,7 @@ import Project from "./(project)/project";
 import Footer from "../component/footer";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import Header from "../component/Header";
 
 export default function Home() {
   useEffect(() => {
@@ -22,6 +23,7 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen bg-black overflow-hidden text-white px-3 md:px-32 pb-5">
+      <Header />
       {/* Glow Bintik Blur */}
       {/* Red */}
       <div className="absolute top-[10%] left-[15%] w-[250px] h-[250px] bg-red-500 rounded-full opacity-60 blur-[160px] z-0" />

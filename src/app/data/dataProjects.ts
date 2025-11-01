@@ -57,6 +57,31 @@ const projects = [
       },
     ],
   },
+  {
+    id: 3,
+    title: "Sistem Bahan Ajar RPS dan Materi Pendidikan Untuk Guru",
+    description:
+      "Sebuah website yang menyediakan bahan ajar RPS dan materi pendidikan untuk guru Sekolah Dasar yang ingin mengembangkan pengetahuan dalam hal mengajar. berbagai materi akan tersedia berdasarkan kategori, dan topik yang didalamnya berupa Rencana Pelaksanaan Pembelajaran, LKPD, dan video pembelajaranya",
+    image: "/assets/bg-sistem-bahan-ajar.png",
+    link: "https://delezine.my.id/",
+    github: "https://github.com/davidindra22",
+    slug: "sistem-bahan-ajar",
+    technologies: ["PHP", "MySQL", "TailwindCSS", "Git"],
+    features: [
+      {
+        bold: "Dashboard Admin",
+        desc: " – Admin dapat mengelola bahan ajar, mengatur kategori, dan menambahkan topik baru.",
+      },
+      {
+        bold: "Search System",
+        desc: " – Memungkinkan pengguna untuk mencari bahan ajar berdasarkan judul atau kategori yang relevan.",
+      },
+      {
+        bold: "Bahan Ajar Details",
+        desc: " – Setiap bahan ajar memiliki halaman khusus yang berisi RPP, LKDP, dan video pembelajaranya.",
+      },
+    ],
+  },
 ];
 
 export default projects;
